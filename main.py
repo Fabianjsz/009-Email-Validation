@@ -8,7 +8,7 @@ API_KEY = os.getenv("API_KEY")
 
 
 def check_Email():
-    email = input("Welche E-Mail soll überprüft werden?")
+    email = input("Welche E-Mail soll überprüft werden? ")
     url = f"http://apilayer.net/api/check?access_key={API_KEY}&email={email}"
     response = requests.get(url+"callback=CALLBACK_FUNCTION")
 
